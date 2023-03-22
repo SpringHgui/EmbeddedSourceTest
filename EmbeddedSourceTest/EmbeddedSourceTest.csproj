@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="libcrypto.so.gz" />
+    <None Remove="libcrypto.so1.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="libcrypto.so.gz" />
+    <EmbeddedResource Include="libcrypto.so1.gz" />
+  </ItemGroup>
+
+</Project>
